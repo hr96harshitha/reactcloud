@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  <h1>{process.env.REACT_APP_KEY_USE_MODE}</h1>
   return (
     <div className="App">
       <header className="App-header">
@@ -15,8 +16,16 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          
         </a>
+        <h1>{process.env.REACT_APP_KEY_APPNAME}</h1>
+        <h2>{process.env.REACT_APP_KEY_VERSION}</h2>
+
+        <h3>{process.env.REACT_APP_KEY_API_URL}</h3>
+        <h4>{process.env.REACT_APP_KEY_SECRET}</h4>
+        
+
+        
       </header>
     </div>
   );
